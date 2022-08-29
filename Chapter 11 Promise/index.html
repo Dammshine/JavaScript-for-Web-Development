@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--html : Create html doc-->
+<html lang="en">
+<!--head : Sets of title, other info not displayed-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title: Not sure rn-->
+    <title>Document</title>
+</head>
+<!--Body attributes
+    1. Bgcolor
+    2. text
+    3. Color for link
+-->
+<body>
+    "This is a body"
+</body>
+<body bgcolor="white" text="black">
+    <!--Text tags-->
+    <h1>"This is a body"</h1>
+    <b><i>"This is a body"<br></i></b>
+    <code><font size=33>cout << "HTML"</font></code>
+    <p>
+        A new paragraph<br>
+    </p>
+    <blockquote>Yes sure, block it out LOL</blockquote>
+</body>
+<pre>
+    This is pre-formmated text
+</pre>
+<!--Try some list-->
+<ol start=1>
+    <b><font size=22>
+        <li><em>item 1</em></li>
+        <li>item 2</li>
+        <li><strong>item 3</strong></li>
+    </b></font>
+</ol>
+
+<!--Try out some embed script-->
+<script>
+    function sayHi() {
+        console.log("Hi");
+    }
+    sayHi();
+</script>
+
+<!--Try out some file script
+    1. The conversion is to put all js, css file in head
+    2. If significant amount of js present, then put into body
+    3. Defer will download the content but not execute
+-->
+<script src="example.js">
+    // Any inline code here will be ignored
+</script>
+<script defer src="example.js">
+    // Any inline code here will be ignored
+</script>
+
+<!--Dynamic Script Loading-->
+<script>
+    let script = document.createElement('script');
+    script.src = 'gibberish.js';
+    document.head.appendChild(script);
+</script>
+
+</html>
